@@ -2,24 +2,21 @@ package br.com.alura.java.io.teste;
 
 import java.io.BufferedWriter;
 import java.io.FileOutputStream;
+import java.io.FileWriter;
 import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 import java.io.Writer;
 import java.io.IOException;
 
-public class TesteEscrita {
+public class TesteEscritaFileWriter {
 
 	public static void main(String[] args) throws IOException {
 		
-		//Fluxo de Saída com Arquivo
-		OutputStream fos = new FileOutputStream("Github2.txt"); 
-		Writer osw = new OutputStreamWriter(fos); 
-		BufferedWriter bw = new BufferedWriter(osw); 
-		
-		bw.write("Generating public/private rsa key pair.");
+		BufferedWriter bw = new BufferedWriter(new FileWriter("Github2.txt"));
+		bw.write("testando testando testando testando testando testando");
 		bw.newLine();
 		bw.newLine();
-		bw.write("BSADJASDKASKDKASDKAS");
+		bw.write("teste teste teste teste teste teste");
 		
 		bw.close();		
 	}
