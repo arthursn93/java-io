@@ -16,7 +16,7 @@ public class TesteEscritaPrintStreamPrintWriter {
 	public static void main(String[] args) throws IOException {	
 		
 		//PrintStream ps = new PrintStream(new File("Github2.txt"));
-		PrintWriter ps = new PrintWriter("Github2.txt");
+		PrintWriter ps = new PrintWriter("Github2.txt","UTF-8");
 	
 		ps.println("testando testando testando testando testando testando");
 		ps.println();
